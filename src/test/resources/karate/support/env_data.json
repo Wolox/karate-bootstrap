@@ -1,0 +1,20 @@
+{
+  "dev":{
+    "authentication": "http://",
+    "urls":{
+      "uri-example": "http://localhost:8080"
+    }
+  },
+  "int":{
+    "authentication": "http://",
+    "urls":{
+      "uri-example": "http://localhost:8080"
+    }
+  },
+  "local":{
+    "authentication": "http://",
+    "urls":{
+      "uri-example": "http://localhost:8080"
+    }
+  }
+}
