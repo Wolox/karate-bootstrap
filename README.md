@@ -38,6 +38,6 @@ The BDD syntax popularized by Cucumber is language-neutral, and easy for even no
 * **resources/_karate/_features/example.feature** - A feature would describe the current test script which has to be executed. (files .feature of the endpoint ext) goes here
 * **resources/_karate/_services/_dao/_data/_query** - you can define the layers and database connections in case there were
 * **resources/_karate/_support/** - A feature would describe the current test script which has to be executed. (files .feature of the enpoint health ext) goes here
-* **resources/_support/_schemas** - Define all schemas of response to use in the features_endpoint
-* **resources/_support/_json** - Define all .json to use in the features_endpointtures and env_data.json we define all the environment variables to be used throughout the project
+* **resources/_karate/_support/_schemas** - Define all schemas of response to use in the features_endpoint
+* **resources/_karate/_support/_json** - Define all .json to use in the features_endpointtures and env_data.json we define all the environment variables to be used throughout the project
 * **/karate-config.js** - here we define all the environment variables to be used throughout the project
