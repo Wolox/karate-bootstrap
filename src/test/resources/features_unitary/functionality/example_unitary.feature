@@ -4,6 +4,11 @@ Feature: sample karate test script
   Background:
     * url 'https://jsonplaceholder.typicode.com'
 
+    # conexion BD
+    * def config = { username: #(DB_USERNAME), password: #(DB_PASSWORD), url: #(DB_URL), driverClassName: #(DB_DRIVER) }
+    * def DbUtils = Java.type('Support.DbUtils')
+    * def db = new DbUtils(config)
+
     @user
     Scenario: get all users and then get the first user by id
     Given path 'users'

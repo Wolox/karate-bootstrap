@@ -34,9 +34,7 @@ Visual Studio Code can be used for Java (or Maven) projects as well. One reason 
                     |     └──functionality
                     |       └── example.feature
                     └──services
-                    |       └──dao
-                    |       └──data
-                    |       └──query
+                    |       └──DbUtils
                     └──support
                           └── shemas
                               └──functionality
@@ -47,8 +45,8 @@ Visual Studio Code can be used for Java (or Maven) projects as well. One reason 
 
 **test/_java/_runner** - Here we define the runner thats execute all features in parallel and generate report
 **resources/_features_unitary/example.feature** - A feature would describe the current test unitary script which has to be executed. (files .feature of the endpoint ext) goes here
-**resources/_features_integration/example.feature** - A feature would describe the current test integraton/flows script which has to be executed. (files .feature of the endpoint ext) goes here
-**resources/_services/_dao/_data/_query** - you can define the layers and database connections in case there were
+**resources/_features_integration/example.feature** - A feature would describe the current test integraton/flows script which has to be executed. (files .feature of the endpoint ext) goes here - **Optional** 
+**resources/_services/_DbUtils** - you can define the layers and database connections in case there were  - **Optional** 
 **resources/_support** - A feature would describe the current test script which has to be executed. (files .feature of the enpoint health ext) goes here
 **resources/_support/_schemas** - Define all schemas of response to use in the features_endpoint
 **karate-config.js** - here we define all the environment variables to be used throughout the project
