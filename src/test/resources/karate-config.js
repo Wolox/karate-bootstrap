@@ -5,7 +5,7 @@ function config() {
     if (!env) {
       env = 'dev';
     }
-    var data = read('classpath:karate/support/env_data.json');
+    var data = read('classpath:support/env_data.json');
     var env_data = data[env];
 
     return data[env];
