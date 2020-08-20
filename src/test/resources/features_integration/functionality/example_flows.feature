@@ -9,8 +9,3 @@ Feature: sample karate test script
     Given path 'users'
     When method get
     Then status 200
-
-
-
-
-

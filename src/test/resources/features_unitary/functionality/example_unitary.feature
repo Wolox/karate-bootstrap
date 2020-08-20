@@ -32,9 +32,3 @@ Feature: sample karate test script
     * method get
     * status 200
     * print "Test unitary execute OK"
-
-
-
-
-
-  
