@@ -2,7 +2,7 @@ Feature: sample karate test script
   for help, see: https://github.com/intuit/karate/wiki/IDE-Support
 
   Background:
-    * url 'https://jsonplaceholder.typicode.com'
+    * url PathUrl
 
     # conexion BD
     * def config = { username: #(DB_USERNAME), password: #(DB_PASSWORD), url: #(DB_URL), driverClassName: #(DB_DRIVER) }
@@ -16,7 +16,7 @@ Feature: sample karate test script
     Then status 200
     * print "Test unitary execute OK"
 
-    @user_by_id
+    @userById
     Scenario: get  users Basic filtering is supported through query parameters.
     Given path 'posts'
     And params { userId: 1}
@@ -24,7 +24,7 @@ Feature: sample karate test script
     Then status 200
     * print "Test unitary execute OK"
 
-    @user_by_id_params @ignore
+    @userByIdParams @ignore
     Scenario: get  users Basic filtering is supported through query parameters.
     * def rut = { userId: '#(userId)'}
     * path 'posts'
