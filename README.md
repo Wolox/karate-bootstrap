@@ -27,12 +27,11 @@ Visual Studio Code can be used for Java (or Maven) projects as well. One reason 
                 |   └──runner
                 |      └──KarateRunner.java
                 └──resources
-                    └──features_unitary
-                    |     └──functionality
-                    |       └── example.feature
-                    └──features_integration
-                    |     └──functionality
-                    |       └── example.feature
+                    └──features
+                    |     └──integration
+                    |          └──example.feature
+                    |     └──unit
+                    |          └──example.feature
                     └──services
                     |       └──DbUtils
                     └──support
@@ -43,10 +42,16 @@ Visual Studio Code can be used for Java (or Maven) projects as well. One reason 
                 logback-test.xml   
 ```
 
-**test/_java/_runner** - Here we define the runner thats execute all features in parallel and generate report
-**resources/_features_unitary/example.feature** - A feature would describe the current test unitary script which has to be executed. (files .feature of the endpoint ext) goes here
-**resources/_features_integration/example.feature** - A feature would describe the current test integraton/flows script which has to be executed. (files .feature of the endpoint ext) goes here - **Optional** 
-**resources/_services/_DbUtils** - you can define the layers and database connections in case there were  - **Optional** 
-**resources/_support** - A feature would describe the current test script which has to be executed. (files .feature of the enpoint health ext) goes here
-**resources/_support/_schemas** - Define all schemas of response to use in the features_endpoint
+**test/java/runner** - Here we define the runner thats execute all features in parallel and generate report
+
+**resources/features/unitary/example.feature** - A feature would describe the current test unitary script which has to be executed. (files .feature of the endpoint ext) goes here
+
+**resources/features/integration/example.feature** - A feature would describe the current test integraton/flows script which has to be executed. (files .feature of the endpoint ext) goes here - **Optional** 
+
+**resources/services/DbUtils** - you can define the layers and database connections in case there were  - **Optional** 
+
+**resources/support** - A feature would describe the current test script which has to be executed. (files .feature of the enpoint health ext) goes here
+
+**resources/support/schemas** - Define all schemas of response to use in the features_endpoint
+
 **karate-config.js** - here we define all the environment variables to be used throughout the project

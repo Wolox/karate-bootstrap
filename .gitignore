@@ -29,9 +29,6 @@ local.properties
 # CDT- autotools
 .autotools
 
-# Config
-karate-config.js
-
 # Java annotation processor (APT)
 .factorypath
 

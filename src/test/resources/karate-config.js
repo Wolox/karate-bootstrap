@@ -13,7 +13,7 @@ function config() {
     if (!env) {
       env = 'dev';
     }
-    var data = read('classpath:support/env_data.json');
+    var data = read('classpath:config');
     var env_data = data[env];
     var  DB_URL = data.DB_URL;
     var  DB_USERNAME = data.DB_USERNAME;
