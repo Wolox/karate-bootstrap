@@ -145,4 +145,4 @@ gradle-app.setting
 
 support/
 env_data.json
-src/test/resources/karate-config.js
+
