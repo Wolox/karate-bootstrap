@@ -2,7 +2,7 @@ Feature: sample karate test script
   for help, see: https://github.com/intuit/karate/wiki/IDE-Support
 
   Background:
-    * url PathUrl
+    * url pathUrl
 
     # conexion BD
     * def config = { username: #(DB_USERNAME), password: #(DB_PASSWORD), url: #(DB_URL), driverClassName: #(DB_DRIVER) }
