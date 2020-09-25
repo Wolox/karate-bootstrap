@@ -44,7 +44,7 @@ Visual Studio Code can be used for Java (or Maven) projects as well. One reason 
 
 **test/java/runner** - Here we define the runner thats execute all features in parallel and generate report
 
-**resources/features/unitary/example.feature** - A feature would describe the current test unitary script which has to be executed. (files .feature of the endpoint ext) goes here
+**resources/features/unit/example.feature** - A feature would describe the current unit test script which has to be executed. (files .feature of the endpoint ext) goes here
 
 **resources/features/integration/example.feature** - A feature would describe the current test integraton/flows script which has to be executed. (files .feature of the endpoint ext) goes here - **Optional** 
 

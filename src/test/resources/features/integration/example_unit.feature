@@ -14,7 +14,6 @@ Feature: sample karate test script
     Given path 'users'
     When method get
     Then status 200
-    * print "Test unitary execute OK"
 
     @userById
     Scenario: get  users Basic filtering is supported through query parameters.
@@ -22,7 +21,6 @@ Feature: sample karate test script
     And params { userId: 1}
     When method get
     Then status 200
-    * print "Test unitary execute OK"
 
     @userByIdParams @ignore
     Scenario: get  users Basic filtering is supported through query parameters.
@@ -31,4 +29,3 @@ Feature: sample karate test script
     * params { userId: userId}
     * method get
     * status 200
-    * print "Test unitary execute OK"
